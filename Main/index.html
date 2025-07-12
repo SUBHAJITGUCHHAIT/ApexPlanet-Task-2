@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Web Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!--  Navigation (Flexbox) -->
+  <nav class="navbar">
+    <div class="logo">MySite</div>
+    <ul class="nav-links">
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="/TodoList/todo.html">To-Do</a></li>
+    </ul>
+  </nav>
+  <!--  Main Content (CSS Grid) -->
+  <main class="grid-container">
+    <!-- Contact Form -->
+    <section id="contact" class="content contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <div id="form-error" class="error-message"></div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
